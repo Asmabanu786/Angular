@@ -1,0 +1,35 @@
+<section>
+    <h2> Pipes Demo</h2>
+    <div>
+        <h3>String Pipes</h3>
+        <p><strong >Original:</strong> <strong><em>{{strData}}</em> </strong></p>
+        <p><strong >Upper:</strong> <strong><em>{{strData|uppercase}}</em> </strong></p>
+        <p><strong >Lower:</strong> <strong><em>{{strData|lowercase}}</em> </strong></p>
+    </div>
+    <div>
+        <h3> Numeric Pipes</h3>
+        <p><strong >Original:</strong> <strong><em>{{numData}}</em> </strong></p>
+        <p><strong >6 non-decimal and 5 decimal digits:</strong> <strong><em>{{numData|number:'6.0-5'}}</em> </strong></p>
+        <p><strong >Percent:</strong> <strong><em>{{numData|percent}}</em> </strong></p>
+        <p><strong >Indian Rupees:</strong> <strong><em>{{numData|currency:'INR'}}</em> </strong></p>
+        <p><strong >US Dollar:</strong> <strong><em>{{numData|currency:'USD'}}</em> </strong></p>
+        <p><strong >Australian Dollar:</strong> <strong><em>{{numData|currency:'AUD'}}</em> </strong></p>
+        <p><strong >Nigerian Dollar:</strong> <strong><em>{{numData|currency:'NUD'}}</em> </strong></p>
+    </div>
+    <div>
+        <h3>Date Pipes</h3>
+        <p><strong >Original:</strong> <strong><em>{{date}}</em> </strong></p>
+        <p><strong >Short Form:</strong> <strong><em>{{date|date:'short'}}</em> </strong></p>
+        <p><strong >Long Form:</strong> <strong><em>{{date|date:'long'}}</em> </strong></p>
+        <p><strong >Custom Form (dd-mm-yyyy):</strong> <strong><em>{{date|date:'dd-mm-yyyy'}}</em> </strong></p>
+        <p><strong >Custom Form (hh:mm:ss a):</strong> <strong><em>{{date|date:'hh:mm:ss a'}}</em> </strong></p>
+        <p><strong >Custom Form (HH:mm:ss c):</strong> <strong><em>{{date|date:'HH:mm:ss c'}}</em> </strong></p>
+    </div>
+    <div>
+        <p>
+            <strong>0786 verbally is </strong>
+            <strong><em>{{0786|verbal}}</em></strong>
+        
+        </p>
+    </div>
+</section>
